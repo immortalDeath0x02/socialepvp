@@ -1,0 +1,58 @@
+body{
+	background-color: #BC5305;
+}
+.ust_Bar_IMG{
+	width: 1024px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.input_Stil{
+	background: url(img/inputStilleri/KadiInput.png);
+	background-size: 290px 75px;
+	width: 278px;
+	height: 72px;
+	font-size: 28px;
+	outline: none;
+	border: none;
+	padding-left: 10px;
+}
+.input_StilSifre{
+	background: url(img/inputStilleri/SifreInput.png);
+	background-size: 290px 75px;
+	width: 278px;
+	height: 72px;
+	font-size: 28px;
+	outline: none;
+	border: none;
+	padding-left: 10px;
+}
+.giris_Buton{
+	background: url(img/butonStilleri/girisYapBefore.png);
+	background-size: 260px 55px;
+	width: 260px;
+	height: 55px;
+	border: none;
+}
+.giris_Kutusu{
+	width: auto;
+	height: auto;
+	padding-left: 256px;
+	background: url(img/frame.png);
+}
+.input_StilKayit{
+	background: url(img/butonStilleri/kayitOlBefore.png);
+	background-size: 260px 55px;
+	width: 260px;
+	height: 55px;
+	border: none;
+}
+.input_StilEposta{
+	background: url(img/inputStilleri/EpostaInput.png);
+	background-size: 290px 75px;
+	width: 278px;
+	height: 72px;
+	font-size: 28px;
+	outline: none;
+	border: none;
+	padding-left: 10px;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SocialePVP - Bir Türk klasiği</title>
+	<link rel="icon" type="image/x-icon" href="/img/icon.gif">
+	<meta name="description" content="Maziyi tekrar sizin için canlandırdık! Hemen kayıt ol ve bu mazi akımına sende katıl.">
+	<meta name="keywords" content="SocialEmpires,pvp server, SocialEmpire Pvp, Empire,Game,Oyun,Mazi,Nostalji">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<style>
+		body{
+			background: url(/img/arkaplan.webp);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.ust_Bar_IMG{
+			width: 256px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.input_Stil{
+			background: url(/img/KadiInput.png);
+			background-size: 290px 75px;
+			width: 278px;
+			height: 72px;
+			font-size: 28px;
+			outline: none;
+			border: none;
+			padding-left: 10px;
+		}
+		.input_StilSifre{
+			background: url(/img/SifreInput.png);
+			background-size: 290px 75px;
+			width: 278px;
+			height: 72px;
+			font-size: 28px;
+			outline: none;
+			border: none;
+			padding-left: 10px;
+		}
+		.giris_Buton{
+			background: url(/img/girisYapBefore.png);
+			background-size: 260px 55px;
+			width: 260px;
+			height: 55px;
+			border: none;
+		}
+		.giris_Kutusu{
+			width: 256px;
+			height: 400px;
+			padding-left: 256px;
+			background: url(img/girisFrame.png);
+			background-size: 512px;
+
+		}
+		.kayit_Kutusu{
+			width: 256px;
+			height: 400px;
+			padding-left: 256px;
+			background: url(img/kayitFrame.png);
+			background-size: 512px;
+
+		}
+		.input_StilKayit{
+			background: url(/img/kayitOlBefore.png);
+			background-size: 260px 55px;
+			width: 260px;
+			height: 55px;
+			border: none;
+		}
+		.input_StilEposta{
+			background: url(/img/EpostaInput.png);
+			background-size: 290px 75px;
+			width: 278px;
+			height: 72px;
+			font-size: 28px;
+			outline: none;
+			border: none;
+			padding-left: 10px;
+		}
+		.popup {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			font-family: sans-serif;
+			z-index: 99;
+		}
+
+		.popup-content {
+			font-family: sans-serif;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.footer_Kutusu
+		{
+			background: #2E2E2E;
+			color: White;
+			font-family: sans-serif;
+			width: 100%;
+			height: 66px;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 90%;
+			text-align: center;
+
+		}
+
+	</style>
+	<!-- UST_BAR -->
+	<script>
+		$(document).ready(function(){
+			$('#popup').fadeIn();
+			$("#popupCloseBtn").click(function(){
+				$("#popup").fadeOut();
+			});
+		});
+	</script>
+	<center>
+		<div class="ust_Bar">
+			<img class="ust_Bar_IMG" src="/img/SocialePvpLogo.png">
+		</div>
+		<div id="popup" class="popup">
+			<div class="popup-content">
+				<h2>Bilgilendirme</h2>
+				<h4>Sevgili Oyuncu! <p>Bildiğin üzere "Flash Player" desteği kesildi. Bu nedenle sana vereceğimiz chromium tarayıcısı ve flash player uygulamasını kurarak oyuna giriş yapabilirsin. İndirmen gerekene tıklaman yeterli.</p></h4>
+				<a href="https://chromium.en.uptodown.com/windows/download/2181158"><img style="width: 50px; height: 50px;" src="/img/chromium.png"></a>
+				<a href="https://archive.org/download/flashplayerarchive/pub/flashplayer/installers/archive/fp_32.0.0.371_archive.zip/32_0_r0_371%2Fflashplayer32_0r0_371_winpep.exe"><img style="width: 50px; height: 50px;" src="/img/flash.png"></a>
+				<br>
+				<button id="popupCloseBtn">Kapat</button>
+			</div>
+		</div>
+	</center>
+	<br>
+	<center>
+		<table>
+			<tr>
+				<td>
+					<div class="giris_Kutusu">
+						<center>
+							<div style="position: absolute; left: 22%; top: 35%;" class="giris_Form">
+								<input type="text" autocomplete="off" name="kullanici_Adi" id="kullanici_Adi" class="input_Stil">
+								<br><br>
+								<input type="password" autocomplete="off" name="kullanici_Sifre" id="kullanici_Sifre" class="input_StilSifre">
+								<br><br>
+								<button id="giris_yap" class="giris_Buton" name="giris_Yap"></button>
+							</div>
+						</center>
+					</div>
+				</td>
+				<td>
+					<div class="kayit_Kutusu">
+						<center>
+							<div style="position: absolute; left: 60%; top: 35%;"  class="kayit_Form">
+								<input type="text" name="kullanici_KayitAdi" autocomplete="off" id="kullanici_KayitAdi" class="input_Stil">
+								<br><br>
+								<input type="password" name="kullanici_KayitSifre" id="kullanici_KayitSifre" autocomplete="off" class="input_StilSifre">
+								<br><br>
+								<input type="email" name="kullanici_KayitEposta" id="kullanici_KayitEposta" autocomplete="off" class="input_StilEposta">
+								<br><br>
+								<button class="input_StilKayit" name="kayit_Ol" id="kayit_Ol"></button>
+							</div>
+						</center>
+					</div>
+				</td>
+				<script type="text/javascript">
+					$(document).ready(function(){
+        // giris_yap
+						$("#giris_yap").click(function(){
+							$.ajax({
+								url: '/api',
+								type: 'POST',
+								data: {
+                    oturumAc: '',  // Boş bir değer gönderilebilir
+                    kullanici_Adi: $('#kullanici_Adi').val(),
+                    kullanici_Sifre: $('#kullanici_Sifre').val()
+                },
+                success: function(response) {
+                	console.log(response)
+                	if (response == "NO") 
+                	{
+                		alert("Kullanıcı Adı Veya Şifre Hatalı!");
+                	}
+                	else{
+                		window.location.href = "/play.html";
+                	}
+                },
+                error: function(xhr, status, error) {
+                	console.log('İstek sırasında bir hata oluştu.');
+                	console.log(error);
+                }
+            });
+						});
+
+
+					// Kayıt Butonu
+						$("#kayit_Ol").click(function(){
+							$.ajax({
+								url: '/api',
+								type: 'POST',
+								data: {
+                    kayitOl: '',  // Boş bir değer gönderilebilir
+                    kullanici_KayitAdi: $('#kullanici_KayitAdi').val(),
+                    kullanici_KayitSifre: $('#kullanici_KayitSifre').val(),
+                    kullanici_KayitEposta: $('#kullanici_KayitEposta').val()
+                },
+                success: function(response) {
+                	if (response == "NO") 
+                	{
+                		alert("Bu kullanıcı adı veya eposta daha önce kullanılmış!");
+                	}
+                	else{
+                		window.location.href = "/play.html";
+                	}
+                },
+                error: function(xhr, status, error) {
+                	console.log('İstek sırasında bir hata oluştu.');
+                	console.log(error);
+                }
+            });
+						});
+					});
+				</script>
+			</tr>
+		</table>
+	</center>
+	<div class="footer_Kutusu">
+		<p>Powered By GloryHx</p>
+	</div>
+</body>
+</html>
